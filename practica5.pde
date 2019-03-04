@@ -185,16 +185,16 @@ void draw() {
   if (keyPressed) {
     if (key == CODED) {
       if (keyCode == UP) {
-        if (angY > -90) angY -= 0.25;
+        if (angY > -90) angY--;
       }
       if (keyCode == DOWN) {
-        if (angY < 90) angY += 0.25;
+        if (angY < 90) angY++;
       }
       if (keyCode == LEFT) {
-        angX -= 0.25;
+        angX--;
       }
       if (keyCode == RIGHT) {
-        angX += 0.25;
+        angX++;
       }
     }
   }
